@@ -70,3 +70,14 @@ func TestArrAsFuncParam(t *testing.T) {
 
 	t.Log(myarr)
 }
+
+func TestOne(t *testing.T){
+	array1 := [3]int{1,2,3}
+	// array2 := [3]int{}
+	array2 := &array1
+	array2[0]=111
+	t.Log(array1)
+	t.Log(array2)
+
+}
+
